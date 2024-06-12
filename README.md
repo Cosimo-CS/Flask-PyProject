@@ -190,3 +190,27 @@ Here below you can find an example of how to use it in an html code.
 
 ### **3.** Protect yourself against SSTI attacks.
 
+**What is SSTI?**
+
+Server-Side Template Injection (SSTI) is a type of security vulnerability that occurs when an attacker can inject malicious code into a template, which is then executed on the server. This happens due to improper handling of user input in templating engines.
+
+**How Does SSTI Work?**
+
+1. **Templating Engines**: Web applications use templating engines (like Jinja2, Twig, or EJS) to dynamically generate HTML pages.
+2. **User Input**: If user input is directly included in templates without proper sanitization or validation, it can lead to SSTI.
+3. **Execution**: Malicious code injected into the template is executed on the server, potentially giving attackers access to sensitive data, server control, or other resources.
+
+**Example of a vulnerable Code**
+
+```python
+from flask import Flask, request, render_template_string
+
+app = Flask(__name__)
+
+@app.route('/greet')
+def greet():
+    name = request.args.get('name')
+    template = f"Hello, {name}!"
+    return render_template_string(template)
+```
+
