@@ -1,4 +1,5 @@
 # Flask-PyProject
+![alt text](/img/banner.png)
 # Project: Form in Python with Flask
 
 ## Skills developed:
@@ -131,11 +132,13 @@ Here are the links for each scripts I used for this project.
 
 ### **1.** Explain the difference between a POST request and a GET request.
 
+- POST request: The request data is sent in the body of the HTTP request. Used to send sensitive data such as passwords, credit card information, etc. Often used for actions that modify the state of the server, such as sending forms.
 
+- GET request: The request data is sent in the URL as request parameters. Used to retrieve resources from the server. The data is visible in the URL, making it less secure for sensitive information. Used for non-destructive requests such as reading data.
 
 ### **2.** Protect yourself against XSS vulnerabilities.
 
-**Against XSS attacks :**
+**Protection against XSS attacks :**
 
 Use of security libraries: Use dedicated security libraries that provide additional functionality to prevent XSS attacks, such as bleach or html_sanitizer.
 
@@ -179,3 +182,4 @@ Here below you can find an example of how to use it in an html code.
 ![alt text](/img/ex-jinja2.png)
 
 ### **3.** Protect yourself against SSTI attacks.
+
