@@ -130,12 +130,12 @@ Here are the links for each scripts I used for this project.
 
 Here below you can see the results:
 
-- ![alt text](/img/contact-html.png)
-- ![alt text](/img/thanks-html.png)
+![alt text](/img/contact-html.png)
+![alt text](/img/thanks-html.png)
 
 As you can see in the terminal below, each actions that I'm doing in the web page are tracked.
 
-- ![alt text](/img/terminal.png)
+![alt text](/img/terminal.png)
 
 
 ## **3.** Miscellaneous
