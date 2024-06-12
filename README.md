@@ -117,14 +117,14 @@ For example, you can use the following strategies in your Flask backend:
 For this project I installed Flask via my terminal and I ran it via Visual code.
 First I prepared my tree structure for my files.
 
-I linked a folder to Visual code with flask and created my files: contact.html, thank_you.html.  I also have my app.py ready to be coded.
+1. I linked a folder to Visual code with flask and created my files: contact.html, thank_you.html.  I also have my app.py ready to be coded.
 
 ![alt text](/img/arbo-flask.png)
 
 Here are the links for each scripts I used for this project.
 
-1. [app.py](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/app.py)
-2. [contact.html](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/contact.html)
-3. [thank_you.html](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/thank_you.html)
+A. [app.py](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/app.py)
+B. [contact.html](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/contact.html)
+C. [thank_you.html](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/thank_you.html)
 
-
+2. 
