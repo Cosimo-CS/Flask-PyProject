@@ -142,7 +142,7 @@ Here are the links for each scripts I used for this project.
 
 Use of security libraries: Use dedicated security libraries that provide additional functionality to prevent XSS attacks, such as bleach or html_sanitizer.
 
-- **I choosed to use html_sanitizer because:**
+- **I choosed to use html_sanitizer and Jinja2 because:**
 
 `html_sanitizer` is a Python library used to clean and sanitize HTML content. It is designed to remove potentially dangerous or unwanted elements and attributes from HTML code, which can help prevent Cross-Site Scripting (XSS) attacks and ensure that the HTML content is safe to display.
 
@@ -159,9 +159,6 @@ Use of security libraries: Use dedicated security libraries that provide additio
 - Removing or sanitizing attributes that could be used for malicious purposes, like `onload`, `onclick`, etc.
 - Ensuring that the content adheres to a specified whitelist of allowed tags and attributes.
 
-- **To add another security layer I also used Jinja2**
-
-- **What is Jinja2?**
 
 `Jinja2` is a modern and designer-friendly templating engine for Python web frameworks. It allows you to create dynamic HTML pages by embedding Python-like expressions in your HTML.
 
