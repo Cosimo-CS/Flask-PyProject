@@ -129,17 +129,17 @@ Here are the links for each scripts I used for this project.
 
 ## **3.** Miscellaneous
 
-1. Explain the difference between a POST request and a GET request.
+### **1.** Explain the difference between a POST request and a GET request.
 
 
 
-2. Protect yourself against XSS vulnerabilities.
+### **2.** Protect yourself against XSS vulnerabilities.
 
 Against XSS attacks :
 
 Use of security libraries: Use dedicated security libraries that provide additional functionality to prevent XSS attacks, such as bleach or html_sanitizer.
 
-I choosed to use html_sanitizer because:
+**I choosed to use html_sanitizer because:**
 
 `html_sanitizer` is a Python library used to clean and sanitize HTML content. It is designed to remove potentially dangerous or unwanted elements and attributes from HTML code, which can help prevent Cross-Site Scripting (XSS) attacks and ensure that the HTML content is safe to display.
 
@@ -157,4 +157,4 @@ I choosed to use html_sanitizer because:
 - Ensuring that the content adheres to a specified whitelist of allowed tags and attributes.
 
 
-3. Protect yourself against SSTI attacks.
+### **3.** Protect yourself against SSTI attacks.
