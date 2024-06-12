@@ -135,7 +135,7 @@ Here are the links for each scripts I used for this project.
 
 ### **2.** Protect yourself against XSS vulnerabilities.
 
-Against XSS attacks :
+**Against XSS attacks :**
 
 Use of security libraries: Use dedicated security libraries that provide additional functionality to prevent XSS attacks, such as bleach or html_sanitizer.
 
@@ -155,6 +155,29 @@ Use of security libraries: Use dedicated security libraries that provide additio
 - Removing scripts, iframes, and other potentially harmful tags.
 - Removing or sanitizing attributes that could be used for malicious purposes, like `onload`, `onclick`, etc.
 - Ensuring that the content adheres to a specified whitelist of allowed tags and attributes.
+
+**To add another security layer I also used Jinja2**
+
+**What is Jinja2?**
+
+Jinja2 is a modern and designer-friendly templating engine for Python web frameworks. It allows you to create dynamic HTML pages by embedding Python-like expressions in your HTML.
+
+**Key Features**
+
+- **Template Inheritance**: Allows you to reuse common layout structures.
+- **Variables**: Dynamically insert values into your HTML.
+- **Control Structures**: Use loops and conditionals to control the rendering of your HTML.
+- **Filters**: Modify the display of variables.
+
+**How Jinja2 Works**
+
+**Templates**
+
+A template is an HTML file with placeholders for dynamic content. These placeholders are called variables and control structures.
+
+**Rendering**
+
+Rendering is the process of combining a template with data to produce a final HTML document.
 
 
 ### **3.** Protect yourself against SSTI attacks.
