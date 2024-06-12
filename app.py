@@ -1,4 +1,3 @@
-```python
 # Import necessary modules from Flask and html_sanitizer
 from flask import Flask, render_template, request
 from html_sanitizer import Sanitizer
