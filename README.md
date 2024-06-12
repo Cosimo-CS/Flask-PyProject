@@ -123,8 +123,8 @@ I linked a folder to Visual code with flask and created my files: contact.html, 
 
 Here are the links for each scripts I used for this project.
 
-1. [app.py]([https://github.com/Cosimo-CS/](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/app.py))
-2. [contact.html]([https://github.com/Cosimo-CS/](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/contact.html))
-3. [thank_you.html]([https://github.com/Cosimo-CS/](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/thank_you.html))
+1. [app.py](https://github.com/Cosimo-CS/](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/app.py))
+2. [contact.html](https://github.com/Cosimo-CS/](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/contact.html))
+3. [thank_you.html](https://github.com/Cosimo-CS/](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/thank_you.html))
 
 
