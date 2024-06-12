@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Hackers Poulette</title>
+  </head>
+  <body style="margin: 0; padding: 0">
+    <h1 style="text-align: center">Contact Hackers Poulette</h1>
+    <div style="max-width: 400px; margin: 0 auto">
+      <form method="POST" action="/submit" style="margin-left: 20px">
+        <div
+          style="display: flex; flex-direction: column; align-items: flex-start"
+        >
+          <div style="display: flex; margin-bottom: 10px">
+            <label for="first_name" style="width: 150px"
+              ><strong>First Name :</strong></label
+            >
+            <input type="text" id="first_name" name="first_name" required />
+          </div>
+
+          <div style="display: flex; margin-bottom: 10px">
+            <label for="last_name" style="width: 150px"
+              ><strong>Last Name :</strong></label
+            >
+            <input type="text" id="last_name" name="last_name" required />
+          </div>
+
+          <div style="display: flex; margin-bottom: 10px">
+            <label for="email" style="width: 150px"
+              ><strong>Email :</strong></label
+            >
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div style="display: flex; margin-bottom: 10px">
+            <label for="country" style="width: 150px"
+              ><strong>Country :</strong></label
+            >
+            <select id="country" name="country" required>
+              <option value="France">France</option>
+              <option value="Belgique">Belgium</option>
+              <option value="Suisse">Switzerland</option>
+              <!-- Ajoutez d'autres pays selon vos besoins -->
+            </select>
+          </div>
+
+          <div style="display: flex; margin-bottom: 10px">
+            <label for="message" style="width: 150px; align-self: flex-start"
+              ><strong>Message :</strong></label
+            >
+            <textarea
+              id="message"
+              name="message"
+              style="resize: horizontal vertical; overflow: auto; flex: 1"
+              required
+            ></textarea>
+          </div>
+
+          <div style="display: flex; margin-bottom: 10px">
+            <label for="gender" style="width: 150px"
+              ><strong>Gender :</strong></label
+            >
+            <input type="radio" id="male" name="gender" value="H" required />
+            Man
+            <input type="radio" id="female" name="gender" value="F" required />
+            Woman
+          </div>
+
+          <div style="display: flex; margin-bottom: 10px">
+            <label for="subject" style="width: 150px"
+              ><strong>Subject :</strong></label
+            >
+            <input
+              type="checkbox"
+              id="repair"
+              name="subject"
+              value="Réparation"
+            />
+            Repair
+            <input type="checkbox" id="order" name="subject" value="Commande" />
+            Order
+            <input
+              type="checkbox"
+              id="other"
+              name="subject"
+              value="Autres"
+              checked
+            />
+            Other
+          </div>
+
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
 
