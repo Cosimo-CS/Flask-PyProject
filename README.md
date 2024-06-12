@@ -117,14 +117,44 @@ For example, you can use the following strategies in your Flask backend:
 For this project I installed Flask via my terminal and I ran it via Visual code.
 First I prepared my tree structure for my files.
 
-1. I linked a folder to Visual code with flask and created my files: contact.html, thank_you.html.  I also have my app.py ready to be coded.
+I linked a folder to Visual code with flask and created my files: contact.html, thank_you.html.  I also have my app.py ready to be coded.
 
 ![alt text](/img/arbo-flask.png)
 
 Here are the links for each scripts I used for this project.
 
-A. [app.py](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/app.py)
-B. [contact.html](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/contact.html)
-C. [thank_you.html](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/thank_you.html)
+1. [app.py](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/app.py)
+2. [contact.html](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/contact.html)
+3. [thank_you.html](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/thank_you.html)
 
-2. 
+## **3.** Miscellaneous
+
+1. Explain the difference between a POST request and a GET request.
+
+
+
+2. Protect yourself against XSS vulnerabilities.
+
+Against XSS attacks :
+
+Use of security libraries: Use dedicated security libraries that provide additional functionality to prevent XSS attacks, such as bleach or html_sanitizer.
+
+I choosed to use html_sanitizer because:
+
+`html_sanitizer` is a Python library used to clean and sanitize HTML content. It is designed to remove potentially dangerous or unwanted elements and attributes from HTML code, which can help prevent Cross-Site Scripting (XSS) attacks and ensure that the HTML content is safe to display.
+
+**Why Use HTML Sanitizer?**
+
+1. **Security**: Sanitizing HTML input prevents malicious users from injecting harmful scripts or code into your web application, which can be used to steal data, deface websites, or perform other malicious activities.
+2. **Consistency**: It helps maintain consistent and clean HTML content by removing unwanted tags and attributes.
+3. **Compliance**: Ensures that user-generated content adheres to your HTML standards and policies.
+
+**How Does It Work?**
+
+`html_sanitizer` works by parsing the HTML content and removing or escaping any elements or attributes that are not in the allowed list. This includes:
+- Removing scripts, iframes, and other potentially harmful tags.
+- Removing or sanitizing attributes that could be used for malicious purposes, like `onload`, `onclick`, etc.
+- Ensuring that the content adheres to a specified whitelist of allowed tags and attributes.
+
+
+3. Protect yourself against SSTI attacks.
