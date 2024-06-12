@@ -33,3 +33,51 @@ First name & last name + email + country (list) + message + gender (M/F) (Radio 
 - Protect yourself against SSTI attacks.
 - Use a micro framework.
 - Perform a deployment.
+
+-----------------------------------------------------------------
+
+## **1.** Flask Web Framework
+
+### What is Flask?
+
+**Flask** is a lightweight, micro web framework for Python, designed to be easy to use and to help developers get started quickly with web development. 
+It’s known for its simplicity and flexibility, allowing developers to choose the tools and libraries they want to use.
+
+### Key Features of Flask
+
+1. **Minimalistic**: Flask provides the basic tools to get a web server up and running with minimal setup, but it doesn't include any default database, form handling, or other components that you might find in more extensive frameworks like Django. This gives developers the freedom to add only what they need.
+
+2. **Modular and Extensible**: Flask is designed to be extended. It supports extensions that add application features as if they were implemented in Flask itself. There are extensions for database integration, form validation, upload handling, and more.
+
+3. **Built-in Development Server and Debugger**: Flask includes a built-in development server and a debugger, which makes the development process easier and more efficient.
+
+4. **RESTful Request Dispatching**: Flask makes it easy to build RESTful APIs by providing tools to handle HTTP requests and route URLs to specific pieces of code.
+
+5. **Jinja2 Templating**: Flask uses Jinja2 as its templating engine, allowing you to separate your HTML from your Python code.
+
+### How Flask Works
+
+Here’s a simple example of a Flask application in `app.py`:
+
+```python
+from flask import Flask, request, render_template, redirect, url_for
+
+app = Flask(__name__)
+
+# Route for handling the home page
+@app.route('/')
+def home():
+    return "Hello, Flask!"
+
+# Route for handling a form submission
+@app.route('/submit', methods=['POST'])
+def submit_form():
+    first_name = request.form['first_name']
+    last_name = request.form['last_name']
+    email = request.form['email']
+    # Process the form data here
+    return f"Form submitted by {first_name} {last_name} with email {email}"
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
