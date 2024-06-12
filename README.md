@@ -80,4 +80,51 @@ def submit_form():
 
 if __name__ == '__main__':
     app.run(debug=True)
+```
+
+### How to run a Flask Application
+
+1. Ensure you have Python installed.
+2. Install Flask using pip:
+
+```bash
+pip install Flask
+```
+
+3. Save the above code in a file named `app.py`.
+4. Run the application:
+
+```bash
+python app.py
+```
+
+5. Open a web browser and navigate to http://127.0.0.1:5000/ to see the output or if you are using Visual Code just click on the link displayed in the terminal.
+
+![alt text](/img/flask-terminal.png)
+
+### Flask and Web Security
+Regarding security, Flask allows you to implement various measures to protect against web vulnerabilities like XSS and SSTI. 
+
+For example, you can use the following strategies in your Flask backend:
+
+1. Sanitize Inputs: Always sanitize and validate user inputs.
+2. Escape Outputs: Use Flask’s built-in Jinja2 templating to automatically escape user inputs before rendering them in HTML.
+3. CSRF Protection: Use Flask extensions like Flask-WTF to protect forms from Cross-Site Request Forgery (CSRF) attacks.
+4. Content Security Policy: Set appropriate security headers, such as Content Security Policy (CSP), to mitigate risks.
+
+## **2.** Project
+
+For this project I installed Flask via my terminal and I ran it via Visual code.
+First I prepared my tree structure for my files.
+
+I linked a folder to Visual code with flask and created my files: contact.html, thank_you.html.  I also have my app.py ready to be coded.
+
+![alt text](/img/arbo-flask.png)
+
+Here are the links for each scripts I used for this project.
+
+1. [app.py](https://github.com/Cosimo-CS/))
+2. [contact.html](https://github.com/Cosimo-CS/))
+3. [thank_you.html](https://github.com/Cosimo-CS/))
+
 
