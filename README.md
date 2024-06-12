@@ -128,6 +128,13 @@ Here are the links for each scripts I used for this project.
 2. [contact.html](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/contact.html)
 3. [thank_you.html](https://github.com/Cosimo-CS/Flask-PyProject/blob/main/thank_you.html)
 
+Here below you can see the results:
+
+![alt text](/img/contact-html.png)
+![alt text](/img/thanks-html.png)
+
+
+
 ## **3.** Miscellaneous
 
 ### **1.** Explain the difference between a POST request and a GET request.
