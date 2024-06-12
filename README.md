@@ -162,14 +162,14 @@ Use of security libraries: Use dedicated security libraries that provide additio
 
 `Jinja2` is a modern and designer-friendly templating engine for Python web frameworks. It allows you to create dynamic HTML pages by embedding Python-like expressions in your HTML.
 
-- **Key Features**
+**Key Features**
 
 - **Template Inheritance**: Allows you to reuse common layout structures.
 - **Variables**: Dynamically insert values into your HTML.
 - **Control Structures**: Use loops and conditionals to control the rendering of your HTML.
 - **Filters**: Modify the display of variables.
 
-- **How Jinja2 Works**
+**How Jinja2 Works**
 
 - A template is an HTML file with placeholders for dynamic content. These placeholders are called variables and control structures.
 - Rendering is the process of combining a template with data to produce a final HTML document.
