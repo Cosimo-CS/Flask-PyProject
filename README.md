@@ -152,7 +152,7 @@ As you can see in the terminal below, each actions that I'm doing in the web pag
 
 Cross-Site Scripting (XSS) is a type of security vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. These scripts can steal data, hijack user sessions, or perform actions on behalf of the user.
 
-**How Does XSS Work?**
+**How does XSS work?**
 
 1. **Injection**: An attacker injects a malicious script into a web application. This can happen through user input fields, URLs, or other methods.
 2. **Execution**: When another user visits the affected page, the malicious script is executed by their browser.
@@ -188,13 +188,13 @@ Use of security libraries: Use dedicated security libraries that provide additio
 
 `html_sanitizer` is a Python library used to clean and sanitize HTML content. It is designed to remove potentially dangerous or unwanted elements and attributes from HTML code, which can help prevent Cross-Site Scripting (XSS) attacks and ensure that the HTML content is safe to display.
 
-**Why Use HTML Sanitizer?**
+**Why use HTML sanitizer?**
 
 1. **Security**: Sanitizing HTML input prevents malicious users from injecting harmful scripts or code into your web application, which can be used to steal data, deface websites, or perform other malicious activities.
 2. **Consistency**: It helps maintain consistent and clean HTML content by removing unwanted tags and attributes.
 3. **Compliance**: Ensures that user-generated content adheres to your HTML standards and policies.
 
-**How Does It Work?**
+**How does it work?**
 
 `html_sanitizer` works by parsing the HTML content and removing or escaping any elements or attributes that are not in the allowed list. This includes:
 - Removing scripts, iframes, and other potentially harmful tags.
@@ -226,13 +226,13 @@ Here below you can find an example of how to use it in an html code.
 
 Server-Side Template Injection (SSTI) is a type of security vulnerability that occurs when an attacker can inject malicious code into a template, which is then executed on the server. This happens due to improper handling of user input in templating engines.
 
-**How Does SSTI works?**
+**How does SSTI works?**
 
 1. **Templating Engines**: Web applications use templating engines (like Jinja2, Twig, or EJS) to dynamically generate HTML pages.
 2. **User Input**: If user input is directly included in templates without proper sanitization or validation, it can lead to SSTI.
 3. **Execution**: Malicious code injected into the template is executed on the server, potentially giving attackers access to sensitive data, server control, or other resources.
 
-**Example of a vulnerable Code**
+**Example of a vulnerable code**
 
 ```python
 from flask import Flask, request, render_template_string
