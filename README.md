@@ -214,3 +214,37 @@ def greet():
     return render_template_string(template)
 ```
 
+**Why is it vulnerable ?**
+
+In this code:
+
+- User Input: The user's input is retrieved from the query parameter name using request.args.get('name').
+- Template Injection: The user input is directly embedded into a template string template = f"Hello, {name}!".
+- Rendering: The render_template_string function is used to render the template, which processes the embedded user input as part of the template.
+
+This allows an attacker to inject malicious template code via the name parameter, which can then be executed on the server.
+
+**How to fix it ?**
+
+To prevent SSTI, sanitize the user input to ensure it does not contain any executable code.
+
+```python
+from flask import Flask, request, render_template_string
+from html import escape
+
+app = Flask(__name__)
+
+@app.route('/greet')
+def greet():
+    name = escape(request.args.get('name', ''))
+    template = f"Hello, {name}!"
+    return render_template_string(template)
+
+```
+
+In the code above:
+
+- The escape function from the html module is used to sanitize the user input by escaping any special characters.
+- This prevents any user input from being executed as code within the template.
+
+By escaping the user input, you ensure that the input is treated as plain text and not executable code, thus mitigating the risk of SSTI.
