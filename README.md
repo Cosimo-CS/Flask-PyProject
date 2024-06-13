@@ -224,7 +224,17 @@ In this code:
 
 This allows an attacker to inject malicious template code via the name parameter, which can then be executed on the server.
 
-**How to fix it ?**
+**Consequences of SSTI attacks**
+
+- Data Theft: Access sensitive information like database credentials, environment variables, or files on the server.
+- Remote Code Execution: Run arbitrary code on the server, potentially taking full control of the server.
+- Defacement: Modify the content of the website to mislead or deface the application.
+
+**How to prevent and fix it?**
+
+- Input Validation: Ensure that user input is properly validated and sanitized before including it in templates.
+- Use Safe Functions: Use templating engine functions that are designed to handle user input safely.
+- Template Escaping: Escape special characters in templates to prevent code execution.
 
 To prevent SSTI, sanitize the user input to ensure it does not contain any executable code.
 
