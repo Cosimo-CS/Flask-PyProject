@@ -148,21 +148,53 @@ As you can see in the terminal below, each actions that I'm doing in the web pag
 
 ### **2.** Protect yourself against XSS vulnerabilities.
 
-- **Protection against XSS attacks :**
+**What is an XSS attack ?**
+
+Cross-Site Scripting (XSS) is a type of security vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. These scripts can steal data, hijack user sessions, or perform actions on behalf of the user.
+
+**How Does XSS Work?**
+
+1. **Injection**: An attacker injects a malicious script into a web application. This can happen through user input fields, URLs, or other methods.
+2. **Execution**: When another user visits the affected page, the malicious script is executed by their browser.
+3. **Impact**: The script can steal sensitive information (like cookies), redirect users to malicious sites, or perform actions without the user's consent.
+
+**Types of XSS**
+
+- Stored XSS
+The malicious script is stored on the server (e.g., in a database) and served to users whenever they access the affected page.
+**Example**: An attacker posts a comment containing a script on a forum. Every time users view the comment, the script runs.
+
+- Reflected XSS
+The malicious script is reflected off the web server, usually via a URL parameter or form input, and executed immediately.
+**Example**: An attacker sends a victim a link with a malicious script in the URL. When the victim clicks the link, the script runs.
+
+- DOM-based XSS
+The vulnerability is in the client-side code (JavaScript) that modifies the DOM. The attack happens entirely on the client-side.
+**Example**: A script reads data from the URL and dynamically updates the page without proper sanitization.
+
+**Example of a vulnerable code**
+```html
+<form action="/search" method="get">
+  <input type="text" name="query">
+  <input type="submit" value="Search">
+</form>
+```
+
+**Protection against XSS attacks :**
 
 Use of security libraries: Use dedicated security libraries that provide additional functionality to prevent XSS attacks, such as bleach or html_sanitizer.
 
-- **I choosed to use html_sanitizer and Jinja2 because:**
+**I choosed to use html_sanitizer and Jinja2 because:**
 
 `html_sanitizer` is a Python library used to clean and sanitize HTML content. It is designed to remove potentially dangerous or unwanted elements and attributes from HTML code, which can help prevent Cross-Site Scripting (XSS) attacks and ensure that the HTML content is safe to display.
 
-- **Why Use HTML Sanitizer?**
+**Why Use HTML Sanitizer?**
 
 1. **Security**: Sanitizing HTML input prevents malicious users from injecting harmful scripts or code into your web application, which can be used to steal data, deface websites, or perform other malicious activities.
 2. **Consistency**: It helps maintain consistent and clean HTML content by removing unwanted tags and attributes.
 3. **Compliance**: Ensures that user-generated content adheres to your HTML standards and policies.
 
-- **How Does It Work?**
+**How Does It Work?**
 
 `html_sanitizer` works by parsing the HTML content and removing or escaping any elements or attributes that are not in the allowed list. This includes:
 - Removing scripts, iframes, and other potentially harmful tags.
@@ -194,7 +226,7 @@ Here below you can find an example of how to use it in an html code.
 
 Server-Side Template Injection (SSTI) is a type of security vulnerability that occurs when an attacker can inject malicious code into a template, which is then executed on the server. This happens due to improper handling of user input in templating engines.
 
-**How Does SSTI Work?**
+**How Does SSTI works?**
 
 1. **Templating Engines**: Web applications use templating engines (like Jinja2, Twig, or EJS) to dynamically generate HTML pages.
 2. **User Input**: If user input is directly included in templates without proper sanitization or validation, it can lead to SSTI.
