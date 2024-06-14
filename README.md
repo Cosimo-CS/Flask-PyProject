@@ -41,10 +41,11 @@ First name & last name + email + country (list) + message + gender (M/F) (Radio 
 
 ### What is Flask?
 
-**Flask** is a lightweight, micro web framework for Python, designed to be easy to use and to help developers get started quickly with web development. 
-It’s known for its simplicity and flexibility, allowing developers to choose the tools and libraries they want to use.
+**Flask** is a small web framework written in Python. It's called a microframework because it doesn't need specific tools or libraries to work. It doesn't come with built-in features like a database layer or form validation. 
+Instead, Flask uses extensions to add these features, making them work just like they were built into Flask. There are extensions for many things, including database management, form validation, file uploads, authentication, and other common tasks. 
+It's designed to help developers start web development quickly. Flask is lightweight and flexible, letting developers pick the tools and libraries they prefer.
 
-### Key Features of Flask
+### Main features of Flask
 
 1. **Minimalistic**: Flask provides the basic tools to get a web server up and running with minimal setup, but it doesn't include any default database, form handling, or other components that you might find in more extensive frameworks like Django. This gives developers the freedom to add only what they need.
 
@@ -56,9 +57,9 @@ It’s known for its simplicity and flexibility, allowing developers to choose t
 
 5. **Jinja2 Templating**: Flask uses Jinja2 as its templating engine, allowing you to separate your HTML from your Python code.
 
-### How Flask Works
+### How Flask works?
 
-Here’s a simple example of a Flask application in `app.py`:
+Here below you can find a simple example of a Flask application in `app.py`:
 
 ```python
 from flask import Flask, request, render_template, redirect, url_for
